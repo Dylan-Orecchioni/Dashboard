@@ -89,12 +89,6 @@ header{
     height: 36px;
 }
 
-/* main */
-
-main {
-    background: #F6F8FA;
-}
-
     /* sidebar */
 
 aside {
@@ -118,7 +112,7 @@ aside {
 }
 
 .nav nav h2 {
-    font-size: 11px;
+    font-size: 0.68rem;
     padding: 26px 0;
     text-transform: uppercase;
     color: #082431;
@@ -153,10 +147,93 @@ aside {
 
 }
 
+/* main */
 
-
-    /* section  */
-section {
-    width: calc(100% - 240px);
+main {
+    background: #F6F8FA;
+    display: flex;
 }
 
+.section {
+    width: calc(100% - 240px);
+    position: relative;
+    top: 65px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section h2 {
+    padding: 33px 0 31px 40px;
+    font-size: 1.5rem;
+    color: #1F384C;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 33px 33px 31px 40px;
+    gap: 33px;
+}
+
+.preview {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 257px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: #FFF;
+}
+
+.bg-icone,.bg-icone2,.bg-icone3,.bg-icone4{
+    border-radius: 10px;
+    width: 63px;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-icone{
+    background: linear-gradient(#504178, #FF7B8A);
+}
+.bg-icone2{
+    background: linear-gradient(#42BA17, #9FF182);
+}
+.bg-icone3{
+    background: linear-gradient(#5A6ACF, #FF7B8A);
+}
+.bg-icone4{
+    background: linear-gradient(#D32136, #FF7B8A);
+}
+
+.preview-content div h3{
+    color: #1F384C;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0.072px;
+}
+
+.preview-content div {
+    display: flex;
+    align-items: center;
+    
+}
+
+.preview-content div svg {
+    padding: 0 5px;
+}
+.preview-content div svg,p {
+    color: #149D52;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+}
