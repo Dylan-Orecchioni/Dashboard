@@ -158,35 +158,33 @@ main {
     width: calc(100% - 240px);
     position: relative;
     top: 65px;
-    display: flex;
+    display: flex; 
     flex-direction: column;
+    padding: 33px 33px 31px 40px;
 }
 
-.section h2 {
-    padding: 33px 0 31px 40px;
+.title {
+    /* padding: 33px 0 31px 40px; */
     font-size: 1.5rem;
     color: #1F384C;
-    font-style: normal;
     font-weight: 500;
     line-height: 23px;
     letter-spacing: 0.5px;
+    margin-bottom: 15px;
 }
 
 .section-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 33px 33px 31px 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 33px;
 }
 
 .preview {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-
-    width: 257px;
-    height: 100px;
+    gap: 18px;
+    padding: 18px;
     border-radius: 5px;
     background-color: #FFF;
 }
@@ -236,4 +234,21 @@ main {
     font-weight: 600;
     line-height: 12px;
     letter-spacing: 0.5px;
+}
+
+/* graph */
+
+.graph{
+    border-radius: 10px;
+    /* width: 1127px; */
+    height: 520px;
+    /* margin: 22px auto; */
+    background-color: #FFF;
+    margin-top: 15px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 33px;
 }
